@@ -21,3 +21,7 @@ DELETE FROM `wp_options` WHERE `option_name` LIKE '_transient_%' OR `option_name
 -- 6. Empty the disallowed keys list
 -- This clears the list of disallowed comment keys, which can sometimes become bloated.
 UPDATE `wp_options` SET `option_value` = '' WHERE `option_name` = 'disallowed_keys';
+
+-- 7. Delete Empty User Meta
+-- This removes user metadata that is either an empty string or has a NULL value, helping to clean up unnecessary rows.
+DELETE FROM `wp_usermeta` WHERE `meta_value` = '' OR `meta_value` IS NULL;
