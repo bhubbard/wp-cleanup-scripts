@@ -61,4 +61,4 @@ Contributions are welcome! If you have a script that cleans up a specific plugin
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the GPLv3 License. See the `LICENSE` file for details.
