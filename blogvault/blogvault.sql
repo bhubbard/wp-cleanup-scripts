@@ -14,7 +14,7 @@ DROP TABLE IF EXISTS `wp_bv_fw_requests`, `wp_bv_ip_store`, `wp_bv_lp_requests`;
 -- Step 2: Delete the specific plugin options.
 -- This query removes the settings and stored data for the plugin from the options table.
 -- The options table prefix (e.g., 'kkt_options') must match your installation.
-DELETE FROM `kkt_options`
+DELETE FROM `wp_options`
 WHERE `option_name` IN (
     'bvActivateTime',
     'bvAccountsList',
