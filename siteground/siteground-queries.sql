@@ -17,4 +17,5 @@ DELETE FROM `wp_options`
 WHERE 
     `option_name` LIKE 'siteground_%' OR 
     `option_name` LIKE 'sgs_%' OR 
+    `option_name` LIKE 'sg_security_%' OR 
     `option_name` LIKE 'sgo_%';
