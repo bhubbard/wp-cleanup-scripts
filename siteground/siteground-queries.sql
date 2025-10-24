@@ -18,4 +18,8 @@ WHERE
     `option_name` LIKE 'siteground_%' OR 
     `option_name` LIKE 'sgs_%' OR 
     `option_name` LIKE 'sg_security_%' OR 
+    `option_name` LIKE 'sg_cachepress%' OR 
     `option_name` LIKE 'sgo_%';
+
+DELETE FROM wp_postmeta
+WHERE meta_key LIKE 'siteground_optimizer_%';
