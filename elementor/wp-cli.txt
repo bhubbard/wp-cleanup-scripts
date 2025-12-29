@@ -1,0 +1,3 @@
+wp elementor update db [--force] [--network]
+
+wp elementor-pro update db [--force] [--network]
