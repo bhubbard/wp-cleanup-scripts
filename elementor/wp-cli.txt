@@ -1,3 +1,11 @@
 wp elementor update db [--force] [--network]
 
 wp elementor-pro update db [--force] [--network]
+
+wp elementor library sync [--force] [--network]
+
+wp elementor replace-urls <old> <new> [--force]
+
+wp elementor flush-css [--regenerate] [--network]
+
+wp elementor-pro license activate <license-key>
